@@ -10,9 +10,6 @@ import htmlelement.element.HtmlElement;
 
 /**
  * Handles annotation of {@link HtmlElement} and its successors.
- *
- * @author Alexander Tolmachev starlight@yandex-team.ru
- *         Date: 20.08.12
  */
 public class HtmlElementClassAnnotationsHandler<T extends HtmlElement> extends AbstractAnnotations {
     private final Class<T> elementClass;

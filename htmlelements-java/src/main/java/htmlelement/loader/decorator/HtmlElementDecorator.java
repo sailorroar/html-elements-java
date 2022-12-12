@@ -38,9 +38,6 @@ import static htmlelement.utils.HtmlElementUtils.*;
  * {@code WebElements}, lists of {@code WebElements}, typified elements and lists of typified elements
  * have to be marked with {@link org.openqa.selenium.support.FindBy}, {@link org.openqa.selenium.support.FindBys}
  * or {@link org.openqa.selenium.support.FindAll} annotation.
- *
- * @author Alexander Tolmachev starlight@yandex-team.ru
- *         Date: 13.08.12
  */
 public class HtmlElementDecorator implements FieldDecorator {
     protected ElementLocatorFactory factory;

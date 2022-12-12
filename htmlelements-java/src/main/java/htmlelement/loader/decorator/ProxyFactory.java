@@ -10,9 +10,6 @@ import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Proxy;
 import java.util.List;
 
-/**
- * Contains factory methods for creating proxy of blocks, typified elements, page objects
- */
 @SuppressWarnings("unchecked")
 public class ProxyFactory {
     public static <T extends WebElement> T createWebElementProxy(ClassLoader loader, InvocationHandler handler) {

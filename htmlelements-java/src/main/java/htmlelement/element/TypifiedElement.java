@@ -2,59 +2,12 @@ package htmlelement.element;
 
 import htmlelement.element.webDriverInterface.WebDriverAware;
 import org.openqa.selenium.*;
-import org.openqa.selenium.interactions.Actions;
 
 import java.util.List;
 
-/**
- * The base class to be used for making classes representing typified elements (i.e web page controls such as
- * text inputs, buttons or more complex elements).
- * <p/>
- * There are several already written classes representing standard web page controls:
- * <ul>
- * <li>{@link Table}</li>
- * <li>{@link TextInput}</li>
- * <li>{@link CheckBox}</li>
- * <li>{@link Select}</li>
- * <li>{@link Link}</li>
- * <li>{@link Button}</li>
- * <li>{@link Radio}</li>
- * <li>{@link TextBlock}</li>
- * <li>{@link Image}</li>
- * <li>{@link Form}</li>
- * <li>{@link FileInput}</li>
- * </ul>
- * <p/>
- * But you can also write your own typified elements if needed. For example:
- * <p/>
- * <pre>
- * <code>public class Link extends TypifiedElement {
- * public Link(WebElement wrappedElement) {
- * super(wrappedElement);
- * }
- * <p/>
- * public String getReference() {
- * return getWrappedElement().getAttribute("href");
- * }
- * }
- * </code>
- * </pre>
- *
- * @author Alexander Tolmachev starlight@yandex-team.ru
- *         Date: 13.08.12
- */
 public abstract class TypifiedElement implements WrapsElement, Named, WebElement, WebDriverAware {
     private final WebElement wrappedElement;
-    private WebDriver driver;
     private String name;
-
-    public void setDriver(WebDriver driver) {
-        this.driver = driver;
-    }
-
-    public void doubleClick() {
-        new Actions(this.driver).doubleClick().perform();
-    }
 
     /**
      * Specifies wrapped {@link WebElement}.

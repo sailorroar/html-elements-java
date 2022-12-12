@@ -5,10 +5,6 @@ import org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandl
 
 import java.lang.reflect.Method;
 
-/**
- * @author Alexander Tolmachev starlight@yandex-team.ru
- *         Date: 21.08.12
- */
 public class WebElementListNamedProxyHandler extends LocatingElementListHandler {
     private final String name;
 

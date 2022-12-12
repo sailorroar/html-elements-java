@@ -20,8 +20,6 @@ import java.lang.annotation.Target;
  * // Other elements and methods here
  * }
  * </pre>
- *
- * @author emaks emaksimenko2106@gmail.com
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.TYPE, ElementType.FIELD})

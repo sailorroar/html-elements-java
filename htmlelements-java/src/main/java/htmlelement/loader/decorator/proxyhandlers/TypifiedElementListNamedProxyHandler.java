@@ -12,10 +12,6 @@ import java.util.List;
 
 import static htmlelement.loader.HtmlElementLoader.createTypifiedElement;
 
-/**
- * @author Alexander Tolmachev starlight@yandex-team.ru
- *         Date: 21.08.12
- */
 public class TypifiedElementListNamedProxyHandler<T extends TypifiedElement> implements InvocationHandler {
     private final Class<T> elementClass;
     private final ElementLocator locator;

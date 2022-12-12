@@ -17,12 +17,6 @@ import java.util.List;
 
 import static org.apache.commons.lang3.reflect.ConstructorUtils.invokeConstructor;
 
-/**
- * Contains utility methods used in framework.
- *
- * @author Alexander Tolmachev starlight@yandex-team.ru
- *         Date: 21.08.12
- */
 public final class HtmlElementUtils {
 
     private HtmlElementUtils() {
@@ -144,12 +138,6 @@ public final class HtmlElementUtils {
             return false;
         }
 
-        // Since subclasses of RemoteWebElement were finally removed in Selenium 2.26.0, WebElements on local drivers
-        // are also instances of RemoteWebElement class. The only way that we found at the current moment to find out
-        // whether WebElement instance is on remote driver is to check the class of RemoteWebElement "parent" filed,
-        // which contains WebDriver instance to which this RemoteWebElement belongs.
-        // As this field has protected access this is done by reflection.
-        // TODO It's is a kind of a dirty hack to be improved in future versions.
         RemoteWebElement remoteWebElement = (RemoteWebElement) element;
         try {
             Field elementParentFiled = RemoteWebElement.class.getDeclaredField("parent");

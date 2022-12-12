@@ -12,10 +12,6 @@ import java.util.List;
 
 import static htmlelement.loader.HtmlElementLoader.createHtmlElement;
 
-/**
- * @author Alexander Tolmachev starlight@yandex-team.ru
- *         Date: 21.08.12
- */
 public class HtmlElementListNamedProxyHandler<T extends HtmlElement> implements InvocationHandler {
     private final Class<T> elementClass;
     private final ElementLocator locator;

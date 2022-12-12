@@ -19,12 +19,6 @@ import java.lang.reflect.InvocationTargetException;
 import static htmlelement.loader.decorator.ProxyFactory.createWebElementProxy;
 import static htmlelement.utils.HtmlElementUtils.*;
 
-/**
- * Contains methods for blocks of elements initialization and page objects initialization.
- *
- * @author Alexander Tolmachev starlight@yandex-team.ru
- *         Date: 13.08.12
- */
 public class HtmlElementLoader {
     /**
      * Creates and initializes a block of elements if the given class is {@link HtmlElement} or its successor

@@ -3,9 +3,6 @@ package htmlelement.exceptions;
 /**
  * Is used to be thrown in runtime in cases when a block of elements or a page object
  * can't be instantiated or initialized.
- *
- * @author Alexander Tolmachev starlight@yandex-team.ru
- *         Date: 16.09.12
  */
 public class HtmlElementsException extends RuntimeException {
     public HtmlElementsException() {

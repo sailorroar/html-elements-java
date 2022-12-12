@@ -8,10 +8,6 @@ import java.lang.reflect.Method;
 import java.time.Clock;
 import java.util.concurrent.TimeUnit;
 
-/**
- * @author Alexander Tolmachev starlight@yandex-team.ru
- *         Date: 21.08.12
- */
 public class WebElementNamedProxyHandler extends LocatingElementHandler {
 
     public static final int DEFAULT_TIMEOUT = 5;

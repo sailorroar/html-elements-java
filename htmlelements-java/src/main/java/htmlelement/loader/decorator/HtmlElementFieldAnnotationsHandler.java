@@ -11,12 +11,6 @@ import org.openqa.selenium.support.pagefactory.Annotations;
 
 import static htmlelement.utils.HtmlElementUtils.*;
 
-/**
- * Extends default field annotations handling mechanism with processing
- * annotation for blocks and lists of blocks.
- *
- * @author Alexander Tolmachev starlight@yandex-team.ru Date: 15.08.12
- */
 public class HtmlElementFieldAnnotationsHandler extends Annotations {
     public HtmlElementFieldAnnotationsHandler(Field field) {
         super(field);

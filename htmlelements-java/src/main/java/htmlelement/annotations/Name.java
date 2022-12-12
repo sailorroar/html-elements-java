@@ -22,9 +22,6 @@ import java.lang.annotation.Target;
  * // Other elements and methods here
  * }
  * </pre>
- *
- * @author Artem Eroshenko eroshenkoam@yandex-team.ru
- *         Date: 17.06.12
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.TYPE, ElementType.FIELD})

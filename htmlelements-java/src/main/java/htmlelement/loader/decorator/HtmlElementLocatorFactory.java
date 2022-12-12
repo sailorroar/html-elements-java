@@ -11,12 +11,6 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.lang.reflect.ParameterizedType;
 
-/**
- * A factory for producing locator instances.
- *
- * @author Alexander Tolmachev starlight@yandex-team.ru
- *         Date: 15.08.12
- */
 public class HtmlElementLocatorFactory implements CustomElementLocatorFactory {
     private final SearchContext searchContext;
 
